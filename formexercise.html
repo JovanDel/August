@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Admission Activity</title>
+    </head>
+    <body>
+        <style>
+            form    {
+                width: 500px;
+                padding: 10px;
+                border: 1px solid black;
+                margin= 10px;
+                 }
+            input, select   {
+                font-size: .55em
+            }
+        </style>
+        <form method="post" action="#">
+            <h1>Hospital Admissions Information</h1>
+            <label for="name">Patient First Name</label>
+            <input type="text" id="Patient First Name" name="Patient First Name"/><br/>
+             <label for="name">Patient Last Name</label>
+            <input type="text" id="Patient Last Name" name="Patient Last Name"/><br/>
+             <label for="name">Patient email address</label>
+            <input type="text" id="Patient email address" name="Patient email address"/><br/>
+             <label for="name">Patient Phone Number</label>
+            <input type="text" id="Patient Phone Number" name="Patient Phone Number"/><br/>
+             <label for="name">Patient Street Address</label>
+            <input type="text" id="Patient Street Address" name="Patient Street Address"/><br/>
+             <label for="name">Patient City</label>
+            <input type="text" id="Patient City" name="Patient City"/><br/>
+            <label for="state">Patient State</label>
+            <select id="state" name="Patient State">
+                <option value="AL">Alabama</option>
+                   <option value="AL">Alabama</option>
+                   <option value="AK">Alaska</option>
+                   <option value="AZ">Arizona</option>
+                   <option value="AR">Arkansas</option>
+                   <option value="CA">CALIFORNIA</option>
+                   </select><br/>
+            <label for name="zip">Patient Zip</label>
+            <input type="text" id="Patient Zip" name="Patient Zip"/><br/>
+            <label for="patient age">Patient Age</label><br/>
+            <input type="number" id="Patient Age" name="Patient Age" min="0" max="115"/><br/>
+            <label for="DOB">Date Of Birth</label>
+            <input type="date" id="dob" name="Date of Birth"/><br/>
+            <input type="text" id="Patient Gender" name="Patient Gender"/><br/>
+            <input type="radio" name="sex"id="sex"value="Male" checked>Male<br/>
+            <input type="radio" name="sex" id="sex" value="Female" checked>Female<br/>
+        </form>
+    </body>
+</html>

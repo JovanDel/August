@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables--Hub Airports</title>
+        <style>
+            table{
+                border: 1px solid black;
+                border-collapse: collapse; 
+                width: 500;
+            }
+            tr,th, td
+            {
+             border: 1px solid black;     
+            }
+            th
+            {
+                background-color:blue;
+            }
+            .city
+            {
+                background-color:aqua;
+            }
+            .an
+            {
+                background-color:chocolate;
+            }
+            .ar
+            {
+                background-color:greenyellow;
+            }
+             </style>
+        </head>
+    <body>
+        <table>
+            <tr>
+                <th>City</th><th>Airport</th><th>Airline Hubs</th>
+            </tr>
+            <tr>
+                <td class="city">New York</td><td class="an">JFK</td><td class="ar">JetBlue</td>
+            </tr>
+            <tr>
+                <td rowspan="2"class="city">Dallas</td><td class="an">DallasLove</td><td class="ar">Southwest</td>
+            </tr>
+            <tr>
+                <td class="an">DFW</td><td class="ar">AmericanAirlines</td>
+            </tr>
+            <tr>
+                <td rowspan="2"class="city">Chicago</td><td class="an">Ohare</td><td class="ar">AmericanAirlines</td>
+            </tr>
+            <tr>
+               <td class="an">Newport</td><td class="ar">Jetblue</td>
+            </tr>
+            <tr>
+                <td class="city">Atlanta</td><td class="an">Atlanta INTNL</td><td class="ar">Delta</td>
+            </tr>
+         </table>
+     </body>
+</html>

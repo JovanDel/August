@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+        //init
+        window.onload=function()
+        {
+         document.getElementById('btnPlus').addEventListener('click',add,false);
+         document.getElementById('btnMinus').addEventListener('click',minus,false);
+         document.getElementById('btnMultiply').addEventListener('click',multiply,false);
+         document.getElementById('btnDivide').addEventListener('click',divide,false);
+        }
+        function add()
+        {
+        var op1 = document.getElementById('op1').value;
+        var op2 = document.getElementById('op2').value;
+        var result =parseInt(op1)+parseInt(op2);
+         document.getElementById('result').innerHTML = result;
+        }
+        function minus()
+        {
+        var op1 = document.getElementById('op1').value;
+        var op2 = document.getElementById('op2').value;
+        var result =parseInt(op1)-parseInt(op2);
+         document.getElementById('result').innerHTML = result; 
+        }
+        function multiply()
+        {
+        var op1 = document.getElementById('op1').value;
+        var op2 = document.getElementById('op2').value;
+        var result =parseInt(op1)*parseInt(op2);
+         document.getElementById('result').innerHTML = result;      
+        }
+        function divide()
+        {
+        var op1 = document.getElementById('op1').value;
+        var op2 = document.getElementById('op2').value;
+        var result =parseInt(op1)/parseInt(op2);
+         document.getElementById('result').innerHTML = result;
+        }
+        </script>
+    </head>
+    <body>
+        <label for ="op1">Operand1</label>
+        <input type="number" id="op1"/>
+        <br/>
+        <label for ="op2">Operand2</label>
+        <input type="number" id="op2"/>
+        <br/>
+        <button id ="btnPlus">+</button>
+        <button id ="btnMinus">-</button>
+        <button id ="btnMultiply">*</button>
+        <button id ="btnDivide">/</button>
+        <div id="result"></div>
+                
+     </body>
+</html>

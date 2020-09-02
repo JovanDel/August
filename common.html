@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Tessas night Tonight</title>
+        <script>
+        window.onload = function()
+        {
+            document.getElementById("main").style.backgroundColor="#FF0000";
+             document.getElementById("main").style.fontSize="4em";
+             document.getElementById("paraOne").style.fontFamily="Arial";
+             document.getElementById("main").innerHTML+="<h2>Here is more text</h2>";
+             document.getElementById("btnPress").addEventListener("click",alertMe,false);
+        }
+        function alertMe()
+        {
+             alert("You have pressed the button")
+        }
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <h1>Heading One</h1>
+            <p id ="paraOne">This is paragraph one.</p>
+            <p>This is paragraph two</p>
+        </div>
+        <button id = "btnPress">Press Me</button>
+    </body>
+</html>
